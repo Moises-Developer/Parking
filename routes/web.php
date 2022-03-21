@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Parking;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('parking.index');
+Route::get('/dashboard/1', function () {
+    return view('parking.index')->with('parks', Parking::all());
+});
+
+Route::get('/dashboard/2', function () {
+    return view('parking.park2');
+});
+
+Route::get('/dashboard/3', function () {
+    return view('parking.park3');
 });
