@@ -34,6 +34,9 @@
           <li class="nav-item fd nvCuad">
             <a class="nav-link nvlet rg" href="/dashboard/3">Piso 3</a>
           </li>
+            <li class="nav-item fd nvCuad">
+                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadisticas del software</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -49,8 +52,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-          <div>
-              <img class="viene" src="../img/viene_viene.gif" alt="No hay sistema xd">
+          <div class="mid-image">
+              <img class="viene" src="../img/modal_back.jpeg" alt="No hay sistema xd">
           </div>
           <div>
                 <p class="pmod">SUPER PARKING SYSTEM</p>
@@ -87,7 +90,7 @@
             <h1>Super Parking</h1>
         </div>
         <div class="maar">
-            <h2 class="h2">PISO 2</h2>    
+            <h2 class="h2">PISO 2</h2>
         </div>
         <div>
             <p class="p">Numero de lugares ocupados: </p>

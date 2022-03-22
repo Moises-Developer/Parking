@@ -16,8 +16,8 @@ class ParkController extends Controller
     public function index()
     {
         $response = Parking::all();
-        json_decode($response, true);
-        return $response[2]->status;
+        $responseTotal = json_encode($response, true);
+        return $responseTotal;
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php 
+<?php
     json_decode($parks, true);
     $j = 0;
     for($i = 1; $i <= 10; $i++){
@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 </head>
 <body>
 <nav class="navbar navbar-light">
@@ -45,6 +44,9 @@
           <li class="nav-item fd nvCuad">
             <a class="nav-link nvlet rg" href="/dashboard/3">Piso 3</a>
           </li>
+            <li class="nav-item fd nvCuad">
+                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadisticas del software</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -56,12 +58,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"> BIENVENIDO AL SISTEMA </h5> 
+        <h5 class="modal-title"> BIENVENIDO AL SISTEMA </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-          <div>
-              <img class="viene" src="../img/viene_viene.gif" alt="No hay sistema xd">
+          <div class="mid-image">
+              <img class="viene" src="../img/modal_back.jpeg" alt="No hay sistema xd">
           </div>
           <div>
             <p class="pmod">SUPER PARKING SYSTEM</p>
@@ -93,7 +95,7 @@
             <div class="<?php isset($park[10]) ? $park[10] : $park[10] = "liberado"; echo $park[10] ?> identificador">10</div>
         </div>
     </div>
-    <?php 
+    <?php
         $ocupado = 0;
         $libre = 0;
         $parking = [$park[1], $park[2], $park[3], $park[4], $park[5], $park[6], $park[7], $park[8], $park[9], $park[10]];
@@ -114,7 +116,7 @@
             <h1>Super Parking</h1>
         </div>
         <div class="maar">
-            <h2 class="h2">PISO 1</h2>    
+            <h2 class="h2">PISO 1</h2>
         </div>
         <div>
             <p class="p">Numero de lugares ocupados: <?= $ocupado ?></p>
@@ -125,9 +127,8 @@
     </div>
 </div>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
 </body>

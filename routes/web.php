@@ -25,3 +25,7 @@ Route::get('/dashboard/2', function () {
 Route::get('/dashboard/3', function () {
     return view('parking.park3');
 });
+
+Route::get('/dashboard/statistics', function (){
+    return view('estadisticas/index')->with('parks', Parking::all());
+});
