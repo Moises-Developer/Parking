@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Parking;
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\NumberParkingsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +30,11 @@ Route::get('/dashboard/3', function () {
 
 Route::get('/dashboard/statistics', function (){
     return view('estadisticas/index')->with('parks', Parking::all());
+});
+
+Route::resource('/estadisticas/carros', CarController::CLASS);
+Route::resource('/estadisticas/cajones', NumberParkingsController::CLASS);
+
+Route::get('/estadisticas/cajones-usados', function(){
+    return view("estadisticas.cajones");
 });

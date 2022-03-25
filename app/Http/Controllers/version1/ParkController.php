@@ -4,6 +4,7 @@ namespace App\Http\Controllers\version1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Parking;
+use App\Models\Car;
 use Illuminate\Http\Request;
 
 class ParkController extends Controller
@@ -53,6 +54,11 @@ class ParkController extends Controller
     {
         $park = Parking::find($request['id']);
         $park->update($request->all());
+
+        /*$car = new Car();
+        $car->Numero_De_Parking = $id;
+        $car->save();*/
+
         if($park == null){
             $response = array("status" => 404, "message" => "No se pude actualizar el ".$id, "accion" => "Park no actualizado");
         }else{

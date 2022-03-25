@@ -15,6 +15,8 @@ class CreateNumberParkingsTable extends Migration
     {
         Schema::create('number_parkings', function (Blueprint $table) {
             $table->id();
+            $table->integer('Numero de parking');
+            $table->string('Habilitado');
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">CANTIDAD DE LUGARES OCUPADOS - DASHBOARD</a>
+        <a class="navbar-brand" href="#">LUGARES MAS USADOS - DASHBOARD</a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Configuraciones de pisos</h5>
@@ -69,14 +69,14 @@
         <div class="styleblock">
             <h3>Elige la estadistica a evaluar: </h3>
             <ul class="unlist">
-                <li><a href="">Estadisca de vehiculos.</a></li>
-                <li><a href="">Cuantos cajones se usan normalmente.</a></li>
-                <li><a href="">Que cajones se usan normalmente.</a></li>
+                <li><a href="{{ url('estadisticas/carros') }}">Estadisca de vehiculos.</a></li>
+                <li><a href="{{ url('estadisticas/cajones') }}">Cuantos cajones se usan normalmente.</a></li>
+                <li><a href="{{ url('estadisticas/cajones-usados') }}">Que cajones se usan normalmente.</a></li>
             </ul>
         </div>
         <div>
 
-            <canvas id="myChart" width="400" height="400" style="background: black"></canvas>
+            <canvas id="myChartThree" width="400" height="400" style="background: black"></canvas>
 
         </div>
     </div>
