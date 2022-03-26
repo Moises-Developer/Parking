@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamiento Dashboard</title>
+    <!--<meta http-equiv="refresh" content="20">-->
+    <title>Sistema de estacionamiento</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">DASHBOARD</a>
+    <a class="navbar-brand" href="#">Sistema de estacionamiento</a>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Configuraciones de pisos</h5>
@@ -26,16 +27,16 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ds">
           <li class="nav-item fd nvCuad">
-            <a class="nav-link nvlet" aria-current="page" href="/dashboard/1">Piso 1</a>
+            <a class="nav-link rg nvlet" aria-current="page" href="/dashboard/1">Piso 1</a>
           </li>
           <li class="nav-item fd nvCuad">
             <a class="nav-link nvlet rg" href="/dashboard/2">Piso 2</a>
           </li>
           <li class="nav-item fd nvPos">
-            <a class="nav-link active nvlet rg" href="/dashboard/3">Piso 3</a>
+            <a class="nav-link active nvlet" href="/dashboard/3">Piso 3</a>
           </li>
             <li class="nav-item fd nvCuad">
-                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadisticas del software</a>
+                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadísticas del software</a>
             </li>
         </ul>
       </div>
@@ -48,7 +49,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"> BIENVENIDO AL SISTEMA </h5>
+        <h5 class="modal-title"> Bienvenido al sistema </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -56,7 +57,7 @@
               <img class="viene" src="../img/modal_back.jpeg" alt="No hay sistema xd">
           </div>
           <div>
-                <p class="pmod">SUPER PARKING SYSTEM</p>
+            <p class="pmod">SUPER PARKING SYSTEM</p>
           </div>
       </div>
     </div>
@@ -87,14 +88,14 @@
     </div>
     <div class="container info circulo">
         <div>
-            <h1>Super Parking</h1>
+          <h1 style="text-align: center;">Sistema de estacionamiento</h1>
         </div>
         <div class="maar">
             <h2 class="h2">PISO 3</h2>
         </div>
         <div>
-            <p class="p">Numero de lugares ocupados: </p>
-            <p class="p">Numero de lugares libres: </p>
+            <p class="p">Número de lugares ocupados: </p>
+            <p class="p">Número de lugares libres: </p>
             <p class="p">Hora actual: </p>
             <p class="p">Fecha: </p>
         </div>

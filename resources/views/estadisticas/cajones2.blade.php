@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamiento Dashboard</title>
+    <title>Sistema de estacionamiento</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">CANTIDAD DE CAJONES SE OCUPAN POR DIA - DASHBOARD</a>
+        <a class="navbar-brand" href="#">Cantidad de cajones que se ocupan por día - Sistema de estacionamiento</a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Configuraciones de pisos</h5>
@@ -37,7 +37,7 @@
                         <a class="nav-link nvlet rg" href="/dashboard/3">Piso 3</a>
                     </li>
                     <li class="nav-item fd nvPos">
-                        <a class="nav-link active nvlet rg" href="/dashboard/statistics">Estadisticas del software</a>
+                        <a class="nav-link active nvlet rg" href="/dashboard/statistics">Estadísticas del software</a>
                     </li>
                 </ul>
             </div>
@@ -47,35 +47,35 @@
 
 
 <div class="modal" id="myModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title"> BIENVENIDO AL SISTEMA </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mid-image">
-                    <img class="viene" src="../img/modal_back.jpeg" alt="No hay sistema xd">
-                </div>
-                <div>
-                    <p class="pmod">SUPER PARKING SYSTEM</p>
-                </div>
-            </div>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> Bienvenido al sistema </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="mid-image">
+              <img class="viene" src="../img/modal_back.jpeg" alt="No hay sistema xd">
+          </div>
+          <div>
+            <p class="pmod">SUPER PARKING SYSTEM</p>
+          </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="dashboard">
     <div class="container getThr">
         <div class="styleblock">
-            <h3>Elige la estadistica a evaluar: </h3>
+            <h3>Elige la estadística a evaluar: </h3>
             <ul class="unlist">
-                <li><a href="{{ url('estadisticas/carros') }}">Estadisca de vehiculos.</a></li>
+                <li><a href="{{ url('estadisticas/carros') }}">Estadística de vehículos.</a></li>
                 <li><a href="{{ url('estadisticas/cajones') }}">Cuantos cajones se usan normalmente.</a></li>
                 <li><a href="{{ url('estadisticas/cajones-usados') }}">Que cajones se usan normalmente.</a></li>
             </ul>
         </div>
         <div>
-
+        
             <canvas id="myChartFour" width="400" height="400" style="background: black"></canvas>
 
         </div>

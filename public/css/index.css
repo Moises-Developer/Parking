@@ -134,7 +134,7 @@ body{
 }
 
 .navbar-toggler{
-    background: #edf93ee0 !important;
+    border-color: black !important;
 }
 
 .offcanvas-header{

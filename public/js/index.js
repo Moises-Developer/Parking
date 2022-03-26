@@ -21,7 +21,7 @@ function loadGraphics()
         const myChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Espacios Disponible', 'Espacios Vacios'],
+                labels: ['Espacios Disponible', 'Espacios Vacíos'],
                 datasets: [{
                     label: '# of Votes',
                     data: [freePark, busyPark],
@@ -57,10 +57,10 @@ function avadakedavra()
         type: 'line',
         data: {
             labels: [
-                'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo',  
+                'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo',  
             ],
             datasets: [{
-                label: 'Carros ingresados en un dia',
+                label: 'Carros ingresados en un día',
                 data: [54, 80, 70, 54, 65, 35, 22],
                 backgroundColor: [
                     'rgba(255, 26, 71, 0.7)',
@@ -101,7 +101,7 @@ function avadakedavra2()
                 'Cajon 8', 'Cajon 9', 'Cajon 10',
             ],
             datasets: [{
-                label: 'Estadisticas de cajones mas usados',
+                label: 'Estadísticas de cajones más usados',
                 data: [10, 12, 8, 18, 5, 11, 4, 3, 2, 14],
                 backgroundColor: [
                     'rgba(255, 26, 71, 0.7)',
@@ -135,12 +135,12 @@ function avadakedavra2()
 
 function avadakedavra3()
 {
-
+    
     const ctx = document.getElementById('myChartFour');
     const myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Cantidad promedio usada', 'Sobrantes de cajones',],
+            labels: ['Cantidad promedió usada', 'Sobrantes de cajones',],
             datasets: [{
                 label: 'Cuantos cajones se usan en promedio',
                 data: [8, 2],

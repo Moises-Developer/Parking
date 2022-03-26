@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta http-equiv="refresh" content="20">-->
-    <title>Estacionamiento Dashboard</title>
+    <title>Sistema de estacionamiento</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">DASHBOARD</a>
+    <a class="navbar-brand" href="#">Sistema de estacionamiento</a>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Configuraciones de pisos</h5>
@@ -45,7 +45,7 @@
             <a class="nav-link nvlet rg" href="/dashboard/3">Piso 3</a>
           </li>
             <li class="nav-item fd nvCuad">
-                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadisticas del software</a>
+                <a class="nav-link nvlet rg" href="/dashboard/statistics">Estadísticas del software</a>
             </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"> BIENVENIDO AL SISTEMA </h5>
+        <h5 class="modal-title"> Bienvenido al sistema </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -113,14 +113,14 @@
     ?>
     <div class="container info circulo">
         <div>
-            <h1>Super Parking</h1>
+            <h1 style="text-align: center;">Sistema de estacionamiento</h1>
         </div>
         <div class="maar">
             <h2 class="h2">PISO 1</h2>
         </div>
         <div>
-            <p class="p">Numero de lugares ocupados: <?= $ocupado ?></p>
-            <p class="p">Numero de lugares libres: <?= $libre ?></p>
+            <p class="p">Número de lugares ocupados: <?= $ocupado ?></p>
+            <p class="p">Número de lugares libres: <?= $libre ?></p>
             <p class="p">Hora actual: <?= date("H:i:s"); ?></p>
             <p class="p">Fecha:  <?= date("d-m-Y"); ?></p>
         </div>
